@@ -221,19 +221,19 @@ header {
   overflow: hidden;
 }
 
-.visually-list {
+.section-privilege__list {
   display: flex;
 }
 
-.visually-list li {
+.section-privilege__list li {
   width: 270px;
 }
 
-.visually-list .item {
+.section-privilege__list .item {
   margin-right: 30px;
 }
 
-.visually-list .item:nth-child(4n) {
+.section-privilege__list .item:nth-child(4n) {
   margin-right: 0;
 }
 /*-------- Стилизация главной страницы сайта ----------*/
@@ -255,7 +255,7 @@ header {
     url('../images/hero.jpg');
 }
 
-.hero-tittle {
+.hero__tittle {
   font-family: 'Roboto';
   color: var(--body-color);
   font-weight: 900;
@@ -373,11 +373,11 @@ header {
 }
 
 /*-------- Стилизация блока чем мы занимаемся ----------*/
-.about-item {
+.about__item {
   position: relative;
 }
 
-.about-text {
+.about__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -399,55 +399,33 @@ header {
   line-height: 1.14;
 }
 
-/* .about-text::before {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 70px;
-
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.about-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--body-color);
-} */
 /*----------------- Стилизация заголовка р ------------------*/
 
-.privilege p,
+.section-privilege p,
 .team p {
   color: var(--primary-text-color);
 }
 
 /*---------------------- Стилизация привилегии -----------------*/
 
-.privilege {
+.section-privilege {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.privilege-tittle {
+.section-privilege__tittle {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
   margin-top: 30px;
 }
 
-.privilege p {
+.section-privilege p {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.privilege-div {
+.section-privilege__div {
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -455,7 +433,7 @@ header {
   align-items: center;
 }
 
-.privilege-icon {
+.section-privilege__icon {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -466,27 +444,27 @@ header {
   padding-bottom: 94px;
 }
 
-.about-title {
+.about__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-list li {
+.about__list li {
   margin-right: 30px;
 }
 
-.about-list li:nth-child(3n) {
+.about__list li:nth-child(3n) {
   margin-right: 0;
 }
 /*---------------------- Стилизация блока команда --------------------*/
 
-.container-title {
+.container__title {
   margin-bottom: 50px;
 }
 
@@ -502,18 +480,18 @@ header {
   text-align: center;
 }
 
-.team-title {
+.command-contact__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
 }
 
-.socials-title {
+.command-contact__text {
   margin-bottom: 16px;
 }
 
-.socials-icons {
+.command-contact__icons {
   fill: #afb1b8;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
@@ -527,7 +505,7 @@ header {
   display: flex;
 }
 
-.team-list-li {
+.team-list__li {
   margin-right: 30px;
   background-color: var(--body-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -535,7 +513,7 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-title {
+.command-contact {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -545,13 +523,13 @@ header {
   margin-right: 0;
 }
 
-.socials-list {
+.command-contact__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.socials-link {
+.command-contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,17 +540,17 @@ header {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.command-contact__link:hover,
+.command-contact__link:focus {
   background-color: var(--accent-color);
 }
 
-.socials-link:hover .socials-icons,
-.socials-link:focus .socials-icons {
+.command-contact__link:hover .command-contact__icons,
+.command-contact__link:focus .command-contact__icons {
   fill: var(--body-color);
 }
 
-.socials-item:not(:last-child) {
+.command-contact__item:not(:last-child) {
   margin-right: 10px;
 }
 /* ---------Секция наши клиенты-------------------------- */
@@ -880,10 +858,6 @@ address {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--accent-color);
-}
-
-.socials-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-socials-icons {
