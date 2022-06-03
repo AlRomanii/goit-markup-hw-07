@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -265,5 +266,196 @@ img {
 
 .command-contact__item:not(:last-child) {
   margin-right: 10px;
+}
+
+/*--------------------- Оформление формы модальном окне --------------------------*/
+textarea {
+  resize: none;
+}
+
+.form-title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 14px 14px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-input:active,
+.form-comments:hover,
+.form-comments:active,
+.form-comments:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon,
+.form-input:active + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-icon:hover,
+.form-icon:focus {
+  fill: var(--accent-color);
+}
+
+.form-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+}
+
+.form-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  color: var(--caption-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  outline: transparent;
+}
+
+.form-polisy-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  border: 3px solid #000000;
+  outline-offset: -2px;
+  cursor: pointer;
+}
+
+.custom-checkbox-icon {
+  opacity: 0;
+  -webkit-transition: opacity var(--transition-timing) var(--transition-function), -webkit-transform var(--transition-timing) var(--transition-function);
+  transition: opacity var(--transition-timing) var(--transition-function), -webkit-transform var(--transition-timing) var(--transition-function);
+  transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function);
+  transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function), -webkit-transform var(--transition-timing) var(--transition-function);
+}
+
+.checkbox:checked + .custom-checkbox-icon {
+  opacity: 1;
+}
+
+.form-polisy-decs {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.visually-hidden-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox:checked + .custom-checkbox .custom-checkbox-icon {
+  opacity: 1;
+}
+
+.custom-checkbox-icon {
+  opacity: 0;
+  -webkit-transition: var(--transition-duration) var(--transition-timing-function);
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+
+.checkbox-label-link {
+  color: var(--accent-color);
+}
+
+.form-input-container:focus-within {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
